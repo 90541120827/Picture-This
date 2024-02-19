@@ -29,12 +29,22 @@ h4 {
   font-weight: 300;
 }
 
-img {
+#responsive-image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #responsive-image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: -50px;
+    right: -50px;
   }
 }
